@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior:smooth
+}
+
+body {
+    background-color: #E5F0FE;
+}
+
+header {
+    background-color: #151517;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0.8em 0;
+}
+
+nav {
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li:first-of-type {
+    margin-left: 0em;
+}
+
+nav li {
+    margin-left: 3.15em;
+    flex-shrink: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: #b8ceea;
+}
+
+.primary-container {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("./images/stromatolites.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+    border-left: 5px solid #151517;
+    border-right: 5px solid #151517;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: #000000 0px 3px 3px;
+    animation: breathe 3s ease-in-out infinite alternate-reverse;
+}
+
+.content-block {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.content-block-heading {
+    background: #151517;
+    padding: 2.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.content-block-heading h2 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    border: 1px solid #ffffff;
+    outline: 1px solid #E5F0FE;
+    outline-offset: 8px;
+    padding: 1.5em;
+}
+
+.content-block .minor-heading {
+    font-size: 1.225rem;
+    margin-bottom: 0.5em;
+}
+
+.content-block-text {
+    padding: 3em 4.5em;
+    width: 60%;
+}
+
+.text-block-1 {
+    border-right: 0.2em solid #151517;
+}
+
+.content-block-text p {
+    font-size: 1.075rem;
+    line-height: 1.6em;
+    text-indent: 1.5em;
+    font-weight: 500;
+    margin-bottom: 0.75em;
+}
+
+.text-img-container-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: -0.5em;
+}
+
+.img-1-container {
+    margin-left: 1em;
+    min-width: 14.5rem;
+    min-height: 15rem;
+    max-width: 14.5rem;
+    max-height: 15rem;
+    background-image: url('./images/early-life.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor:zoom-in;
+}
+
+.img-1-container:hover {
+    box-shadow: 0 0 5px #000000;
+    border: transparent;
+    transform: scale(1.35);
+}
+
+
+.breaker {
+    height: 0.6rem;
+    width: 100%;
+    background-color: #151517;
+}
+
+.text-block-2 {
+    border-left: 0.2em solid #151517;
+    width: 80%;
+}
+
+.text-img-container-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: -0.5em;
+}
+
+.img-2-container {
+    margin-left: 1em;
+    min-width: 15.5rem;
+    min-height: 18rem;
+    max-width: 15.5rem;
+    max-height: 18rem;
+    background-image: url('./images/early-atmosphere.jfif');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor:zoom-in;
+}
+
+.img-2-container:hover {
+    box-shadow: 0 0 5px #000000;
+    border: transparent;
+    transform: scale(1.35);
+}
+
+.text-img-container-3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: -0.5em;
+}
+
+.img-3-container {
+    margin-left: 1em;
+    min-width: 10rem;
+    min-height: 10rem;
+    max-width: 10rem;
+    max-height: 10rem;
+    background-image: url('./images/cyanobacteria.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor:zoom-in;
+}
+
+.img-3-container:hover {
+    box-shadow: 0 0 5px #000000;
+    border: transparent;
+    transform: scale(1.5);
+}
+
+.text-img-container-4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.25em;
+}
+
+.img-4-container {
+    margin-left: 1em;
+    min-width: 13rem;
+    min-height: 13rem;
+    max-width: 13rem;
+    max-height: 13rem;
+    background-image: url('./images/banded-iron-formation.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor:zoom-in;
+}
+
+.img-4-container:hover {
+    box-shadow: 0 0 5px #000000;
+    border: transparent;
+    transform: scale(1.5);
+}
+
+.text-block-3 {
+    border-right: 0.2em solid #151517;
+    width: 75%;
+}
+
+.text-img-container-5 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.25em;
+}
+
+.img-5-container {
+    margin-left: 1em;
+    min-width: 15rem;
+    min-height: 15rem;
+    max-width: 15rem;
+    max-height: 15rem;
+    background-image: url('./images/dying.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor:zoom-in;
+}
+
+.img-5-container:hover {
+    box-shadow: 0 0 5px #000000;
+    border: transparent;
+    transform: scale(1.5);
+}
+
+.text-img-container-6 {
+    display: flex;
+    align-items: center;
+    margin-bottom: -0.5em;
+}
+
+.img-6-container {
+    margin-left: 1em;
+    min-width: 15rem;
+    min-height: 15rem;
+    max-width: 15rem;
+    max-height: 15rem;
+    background-image: url('./images/snowball-earth.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor:zoom-in;
+}
+
+.img-6-container:hover {
+    box-shadow: 0 0 5px #000000;
+    border: transparent;
+    transform: scale(1.5);
+}
+
+.feedback-process-images {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-img {
+    min-width: 14rem;
+    min-height: 12rem;
+    max-width: 14rem;
+    max-height: 12rem;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor:zoom-in;
+    margin-left: 0.5em;
+}
+
+.feedback-img:first-of-type {
+    margin-left: 0;
+}
+
+.feedback-img:hover {
+    box-shadow: 0 0 5px #000000;
+    border: transparent;
+    transform: scale(1.5);
+}
+
+.feedback-img-1 {
+    background-image: url('./images/feedback-img-1.png');
+}
+
+.feedback-img-2 {
+    background-image: url('./images/feedback-img-2.png');
+}
+
+.feedback-img-2:hover {
+    transform: scale(1.9);
+}
+
+.feedback-img-3 {
+    background-image: url('./images/feedback-img-3.png');
+}
+
+.references-block {
+    background: #000000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.references-block h2 {
+    color: #ffffff;
+    text-align: center;
+    margin: 0.5em 0;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.references-block .ref-list {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    max-width: 95%;
+}
+
+.ref-list ol {
+    list-style-type: none;
+    max-width: 95%;
+    
+}
+
+.ref-list li {
+    margin-bottom: 0.5em;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ref-list a {
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 1.05rem;
+}
+
+.ref-list a:hover {
+    text-decoration: none;
+}
+
+@keyframes breathe {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.035);
+    }
+}
